@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>appprueba</title>
+  <meta name="description" content="appprueba — Sitio inicial optimizado para rendimiento y accesibilidad." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#7dd3fc;
+      --text:#e6eef8;
+    }
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    body{background:linear-gradient(180deg,#071028 0%, #07172a 100%);color:var(--text);display:flex;align-items:center;justify-content:center;padding:2rem;}
+    .container{max-width:900px;width:100%;background:rgba(255,255,255,0.02);padding:2rem;border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+    header{display:flex;align-items:center;gap:1rem}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#60a5fa,#7dd3fc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#02203a}
+    h1{margin:0;font-size:1.8rem}
+    p.lead{opacity:0.9}
+    .actions{margin-top:1.2rem}
+    a.button{display:inline-block;padding:.6rem 1rem;border-radius:8px;background:var(--accent);color:#042033;text-decoration:none;font-weight:600}
+    footer{margin-top:1.6rem;font-size:.9rem;opacity:0.8}
+    /* Accessibility: focus styles */
+    a:focus{outline:3px solid #93c5fd;outline-offset:3px}
+    @media (max-width:600px){
+      .container{padding:1rem}
+      h1{font-size:1.4rem}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden">Saltar al contenido</a>
+  <div class="container" role="main" id="main">
+    <header>
+      <div class="logo" aria-hidden="true">A</div>
+      <div>
+        <h1>appprueba</h1>
+        <p class="lead">Página inicial estática — ligera, accesible y lista para desplegar en GitHub Pages.</p>
+      </div>
+    </header>
+
+    <section style="margin-top:1.2rem">
+      <p>Esta es la base para construir la web de appprueba. Siguientes pasos recomendados: optimizar imágenes, configurar Lighthouse CI, y añadir contenido y rutas adicionales.</p>
+      <div class="actions">
+        <a class="button" href="README.md">Ver README</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Hecho con ♥ — lista para continuar la mejora.</p>
+    </footer>
+  </div>
+</body>
+</html>
